@@ -1,0 +1,661 @@
+/* General */
+/* Styling for the body */
+.body1 {
+    height: 2500px;
+    background-color: gold;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+.body2 {
+    height: 5000px;
+    background-color: pink;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 80px;
+    margin-left: -1px;
+}
+
+.body3 {
+    height: 3600px;
+    background-color: gold;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 80px;
+    margin-left: -1px;
+}
+
+.body4 {
+    height: 5000px;
+    background-color: wheat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 80px;
+    margin-left: -1px;
+}
+
+.body5 {
+    height: 866px;
+    background-color: gold;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 80px;
+    margin-left: -1px;
+}
+
+/* Styling for the header */
+header {
+    position: fixed; /* Fix the header to the top of the viewport */
+    background-color: gold;
+    margin-top: -80px;
+    width: 100%;
+    height: 80px;
+    z-index: 1000; /* Ensure the header is above other elements */
+}
+
+/* Styling for the heading */
+h1 {
+    font-family: "Bebas Neue";
+    position: fixed;
+    font-size: 55px;
+    margin: 0; /* Remove margin on all sides */
+    margin-top: 0px;
+    padding-top: 8px;
+    width: 380px;
+    padding-left: 20px; /* Add padding instead of margin for left spacing */
+    color: black;
+}
+
+/* Styles for the navigation bar */
+.navbar {
+    position: fixed; /* Fix the navbar position */
+    top: 0;
+    right: 0;
+    margin-right: 100px;
+    padding: 20px;
+}
+
+/* Styles for list items inside the navbar */
+.navbar li {
+    display: inline-block; 
+    padding: 0;
+    margin-top: -10px;
+    position: relative;
+}
+
+/* Pseudo-element for creating a sliding background effect */
+.navbar li::before {
+    content: ''; /* Add content to pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; /* Initially set width to 0 */
+    height: 100%;
+    background-color: black;
+    z-index: -1; /* Move behind the list item */
+    transition: width 0.2s ease; /* Transition width */
+}
+
+/* Expand the pseudo-element width on hover */
+.navbar li:hover::before {
+    width: 100%; /* Expand width on hover */
+}
+
+/* Styles for anchor tags inside the navbar */
+.navbar a {
+    font-family: "Radio Canada Big";
+    font-size: large;
+    color: black;
+    padding: 20px;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Change text color on hover */
+.navbar a:hover {
+    color: gold;
+}
+
+/* Home */
+/* Styling for the slider container */
+.slider-container {
+    position: relative; /* Set positioning context to relative */
+    width: 1912px;
+    height: 690px;
+    overflow: hidden; /* Hide overflow content */
+    margin-top: 80px; /* Space the slider below the header */
+    margin-left: -9px;
+}
+
+/* Styling for the slider */
+.slider {
+    display: flex; /* Use flexbox layout */
+    transition: transform 1s ease-in-out; /* Apply smooth transition to slider transformation */
+    width: 100%;
+}
+
+/* Styling for individual slides */
+.slide {
+    flex: 0 0 auto; /* Allow auto-sizing of slides */
+    width: 100%;
+    height: 690px;
+}
+
+/* Styling for slide images */
+.slide img {
+    width: 100%; /* Set image width to 100% of its container */
+    height: 100%; /* Set image height to 100% of its container */
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+/* Styling for manual navigation */
+.manual-navigation {
+    position: absolute; /* Set positioning context to absolute */
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Center the navigation horizontally */
+}
+
+/* Styling for individual navigation buttons */
+.manual-btn {
+    display: inline-block; /* Make buttons inline-block */
+    width: 10px; /* Set button width to 10 pixels */
+    height: 10px; /* Set button height to 10 pixels */
+    border-radius: 50%; /* Make buttons circular */
+    background-color: white;
+    margin: 5px; /* Add margin around each button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: 1s; /* Apply smooth transition */
+}
+
+/* Styling for hover effect on navigation buttons */
+.manual-btn:hover {
+    background: black;
+}
+
+.preview-welcome {
+    font-family: "Anton";
+    font-size: 55px;
+    position: absolute;
+    margin-top: 52px;
+    margin-left: 645px;
+}
+
+.preview-container1,
+.preview-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 183px;
+}
+
+.preview-container2 {
+    margin-top: 0;
+}
+
+.preview1, .preview2 {
+    width: 951px;
+    height: 650px;
+}
+
+.preview-text1,
+.preview-text2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    width: 600px;
+    max-width: 60%;
+    display: inline-block;
+    text-align: center;
+}
+
+.preview-text1 {
+    margin-right: 160px;
+    margin-bottom: 150px;
+}
+
+.preview-text2 {
+    margin-left: 160px;
+    margin-bottom: 75px;
+}
+
+.preview-text1 h2, .preview-text2 h2 {
+    font-family: "Bebas Neue";
+    font-size: 50px;
+}
+
+.preview-text1 a,
+.preview-text2 a {
+    font-family: "Anton";
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border: 2px solid black;
+    background-color: gold; /* Set initial background color */
+    transition: background-color 0.5s ease; /* Add transition for background color */
+}
+
+/* Change background color on hover */
+.preview-text1 a:hover,
+.preview-text2 a:hover {
+    background-color: black; /* Change background color on hover */
+    color: gold; /* Change text color on hover */
+}
+
+footer {
+    height: 150px;
+    width: 1904px;
+    margin: 177px 0px 0px 0px;
+    background-color: black;
+    align-content: center;
+}
+
+footer p {
+    color: gold;
+    margin: 0px 0px 0px 900px;
+    font-size: 20px;
+}
+
+/* Menu */
+.menu-description {
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    margin: 100px 0px 0px 670px;
+    text-align: center;
+}
+
+.menu-h1 {
+    font-family: "Bebas Neue";
+    position: relative;
+    font-size: 50px;
+    margin: 0px 0px 0px 43px;
+}
+
+.menu-description p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.menu-description a {
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border: 2px solid black;
+    background-color: gold; /* Set initial background color */
+    transition: background-color 0.5s ease;
+}
+
+.menu-description a:hover {
+    background-color: black; /* Change background color on hover */
+    color: gold; /* Change text color on hover */
+}
+
+.bbq {
+    position: absolute;
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    padding: 20px; /* Optional padding */
+    width: 500px; /* Optional width */
+    margin: 400px 0px 0px 300px;
+}
+
+.bbq img {
+    max-width: 100%; /* Ensures the image fits within the container */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.bbq-description {
+    text-align: center; /* Centers text */
+    margin-top: 20px; /* Adds space between the image and the description */
+}
+
+.bbq h1 {
+    position: relative;
+    margin: 0;
+    font-size: 50px;
+    margin-left: -140px;
+}
+
+.bbq-description h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+.bbq-description ul {
+    text-align: left;
+}
+
+.bbq-description li {
+    font-family: "Bebas Neue";
+    list-style: none;
+    font-size: 22px;
+}
+
+.bbq-description p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.burger {
+    position: absolute;
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    padding: 20px; /* Optional padding */
+    width: 500px; /* Optional width */
+    margin: 400px 0px 0px 1000px;
+}
+
+.burger img {
+    max-width: 100%; /* Ensures the image fits within the container */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.burger-description {
+    text-align: center; /* Centers text */
+    margin-top: 42px; /* Adds space between the image and the description */
+}
+
+.burger h1 {
+    position: relative;
+    margin: 0;
+    font-size: 50px;
+    margin-left: -140px;
+}
+
+.burger-description h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+.burger-description ul {
+    text-align: left;
+}
+
+.burger-description li {
+    font-family: "Bebas Neue";
+    list-style: none;
+    font-size: 22px;
+}
+
+.burger-description p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.sides {
+    position: absolute;
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    padding: 20px; /* Optional padding */
+    width: 500px; /* Optional width */
+    margin: 1850px 0px 0px 300px;
+}
+
+.sides img {
+    max-width: 100%; /* Ensures the image fits within the container */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.sides-description {
+    text-align: center; /* Centers text */
+    margin-top: 20px; /* Adds space between the image and the description */
+}
+
+.sides h1 {
+    position: relative;
+    margin: 0;
+    font-size: 50px;
+    margin-left: -140px;
+}
+
+.sides-description h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+.sides-description ul {
+    text-align: left;
+}
+
+.sides-description li {
+    font-family: "Bebas Neue";
+    list-style: none;
+    font-size: 22px;
+}
+
+.sides-description p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.drinks {
+    position: absolute;
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    padding: 20px; /* Optional padding */
+    width: 500px; /* Optional width */
+    margin: 1850px 0px 0px 1000px;
+}
+
+.drinks img {
+    max-width: 100%; /* Ensures the image fits within the container */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.drinks-description {
+    text-align: center; /* Centers text */
+    margin-top: 42px; /* Adds space between the image and the description */
+}
+
+.drinks h1 {
+    position: relative;
+    margin: 0;
+    font-size: 50px;
+    margin-left: -140px;
+}
+
+.drinks-description h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -20px;
+    font-size: 16px;
+    color: black;
+}
+
+.drinks-description ul {
+    text-align: left;
+}
+
+.drinks-description li {
+    font-family: "Bebas Neue";
+    list-style: none;
+    font-size: 22px;
+}
+
+.drinks-description p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.cater {
+    position: absolute;
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    padding: 20px; /* Optional padding */
+    width: 500px; /* Optional width */
+    margin: 3350px 0px 0px 300px;
+}
+
+.cater img {
+    max-width: 100%; /* Ensures the image fits within the container */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.cater-description {
+    text-align: center; /* Centers text */
+    margin-top: 20px; /* Adds space between the image and the description */
+}
+
+.cater h1 {
+    position: relative;
+    margin: 0;
+    font-size: 50px;
+    margin-left: -140px;
+}
+
+.cater-description h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+.cater-description ul {
+    text-align: left;
+}
+
+.cater-description li {
+    font-family: "Bebas Neue";
+    list-style: none;
+    font-size: 22px;
+}
+
+.cater-description p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.why {
+    position: absolute;
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    padding: 20px; /* Optional padding */
+    width: 500px; /* Optional width */
+    margin: 3315px 0px 0px 1000px;
+}
+
+.why h2 {
+    font-family: "Bebas Neue";
+    font-size: 50px;
+    margin-left: -140px;
+}
+
+.why-description {
+    text-align: center; /* Centers text */
+    margin-top: -10px; /* Adds space between the image and the description */
+}
+
+.why-description h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -20px;
+    font-size: 16px;
+    color: black;
+}
+
+.why-description ul {
+    text-align: left;
+}
+
+.why-description li {
+    font-family: "Bebas Neue";
+    list-style: none;
+    font-size: 22px;
+}
+
+.why-description p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+/* Order */
+
+/* Contact */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    height: 775px; /* Make sure the main content takes the full viewport height */
+    margin-top: 60px; /* Adjust margin to account for fixed navbar height */
+}
+.contact-container {
+    font-family: "Bebas Neue";
+    font-size: 22px;
+    text-align: center;
+    padding: 20px;
+    color: gold;
+    background-color: black; /* Slightly transparent background */
+    border-radius: 10px;
+    height: 500px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    height: 775px; /* Make sure the main content takes the full viewport height */
+    margin-top: 60px; /* Adjust margin to account for fixed navbar height */
+}
+.contact-container {
+    text-align: center;
+    padding: 20px;
+    background-color: black; /* Slightly transparent background */
+    border-radius: 10px;
+    height: 500px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.contact-item img {
+    width: 24px;
+    height: 24px;
+    margin: 0px 10px 0px 0px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: gold;
+}
+
+.thank-you {
+    margin-top: 20px;
+    font-weight: bold;
+    color: gold;
+}
+
+.male {
+    position: absolute;
+    top: 325px; /* Adjust as needed */
+    left: 268px; /* Adjust as needed */
+}
