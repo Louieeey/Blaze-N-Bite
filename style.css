@@ -584,6 +584,153 @@ footer p {
 
 /* Order */
 
+.bbq-header {
+    position: absolute;
+    font-family: "Anton";
+    margin: 20px 0px 0px 350px;
+}
+
+.brisket-container {
+    position: absolute;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: row; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    background-color: #e0e0e0;
+    width: 600px; /* Optional width */
+    margin: 150px 0px 0px 340px;
+}
+
+.soon-image {
+    max-width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.brisket-text li {
+    list-style: none;
+    margin-top: -15px;
+}
+
+.brisket-text h2 {
+    font-family: "Bebas Neue";
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.brisket-text p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.porkribs-container {
+    position: absolute;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: row; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    background-color: #e0e0e0;
+    width: 600px; /* Optional width */
+    margin: 150px 0px 0px 962px;
+}
+
+.porkribs-text li {
+    list-style: none;
+    margin-top: -15px;
+}
+
+.porkribs-text h2 {
+    font-family: "Bebas Neue";
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.porkribs-text p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.spareribs-container {
+    position: absolute;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: row; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    background-color: #e0e0e0;
+    width: 600px; /* Optional width */
+    margin: 310px 0px 0px 340px;
+}
+
+.spareribs-text li {
+    list-style: none;
+    margin-top: -15px;
+}
+
+.spareribs-text h2 {
+    font-family: "Bebas Neue";
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.spareribs-text p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.porkbelly-container {
+    position: absolute;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: row; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    background-color: #e0e0e0;
+    width: 600px; /* Optional width */
+    margin: 310px 0px 0px 962px;
+}
+
+.porkbelly-text li {
+    list-style: none;
+    margin-top: -15px;
+}
+
+.porkbelly-text h2 {
+    font-family: "Bebas Neue";
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.porkbelly-text p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.turkeybreast-container {
+    position: absolute;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: row; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    background-color: #e0e0e0;
+    width: 600px; /* Optional width */
+    margin: 469px 0px 0px 340px;
+}
+
+.turkeybreast-text li {
+    list-style: none;
+    margin-top: -15px;
+}
+
+.turkeybreast-text h2 {
+    font-family: "Bebas Neue";
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.turkeybreast-text p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
 /* Contact */
 .main-content {
     display: flex;
