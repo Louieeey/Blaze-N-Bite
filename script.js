@@ -30,3 +30,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Automatic slide navigation
     setInterval(nextSlide, 5000); // Setting interval to automatically transition to the next slide every 5 seconds
 });
+
+// modal
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+// Close the modal when clicking outside of it
+window.onclick = function(event) {
+    const modals = document.getElementsByClassName('modal');
+    for (let i = 0; i < modals.length; i++) {
+        if (event.target === modals[i]) {
+            modals[i].style.display = "none";
+        }
+    }
+}
