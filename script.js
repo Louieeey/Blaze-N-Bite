@@ -1,5 +1,3 @@
-console.console.log("Hello world");
-
 document.addEventListener('DOMContentLoaded', function() {
     const slides = document.querySelector('.slider'); // Selecting the slider container
     const manualNavButtons = document.querySelectorAll('.manual-btn'); // Selecting all manual navigation buttons
